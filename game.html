@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Game of Life</title>
+  </head>
+  <body>
+    <div id="canvas"></div>
+    <div class="box-container">
+      <button class="start-btn">START</button>
+      <button class="pause-btn">PAUSE</button>
+      <button id="reset-game">RESET GAME</button>
+      <button class="init-btn">INITIAL STATE</button>
+      <button class="pattern-btn">PATTERN</button>
+
+      <div class="speed-control">SPEED</div>
+      <div class="slidecontainer">
+        <input
+          type="range"
+          min="1"
+          max="30"
+          value="10"
+          class="slider"
+          id="myRange"
+        />
+      </div>
+    </div>
+
+    <div class="rules-container">
+      <form class="inputIndexOfSurvival">
+        <label for="fname">Rules of Survival</label>
+        <input type="text" id="survival" name="survival" value="2" />
+      </form>
+      <form class="inputIndexOfReproduction">
+        <label for="lname">Rules of Reproduction:</label>
+        <input type="text" id="reproduction" name="lname" value="3" />
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

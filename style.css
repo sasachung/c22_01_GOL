@@ -1,0 +1,140 @@
+#canvas {
+  margin: 10px;
+}
+body {
+  background-color: rgb(115, 157, 181);
+}
+.box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.start-btn {
+  background: rgb(52, 30, 173);
+  width: 120px;
+  height: 28px;
+  border-radius: 5px;
+  color: white;
+  margin-right: 10px;
+  transition: all 0.5s;
+  text-align: center;
+}
+.pause-btn {
+  background: rgb(150, 9, 98);
+  width: 120px;
+  height: 28px;
+  border-radius: 5px;
+  color: white;
+  margin-right: 10px;
+  transition: all 0.5s;
+  text-align: center;
+}
+#reset-game {
+  background: rgb(135, 24, 116);
+  width: 140px;
+  height: 28px;
+  border-radius: 5px;
+  color: white;
+  margin-right: 10px;
+  transition: all 0.5s;
+  padding: 0 0 0 5px;
+}
+.init-btn {
+  background: rgb(16, 138, 190);
+  width: 140px;
+  height: 28px;
+  border-radius: 5px;
+  color: white;
+  margin-right: 10px;
+  transition: all 0.5s;
+  padding: 0 0 0 5px;
+}
+
+.pattern-btn {
+  background: #17cca9;
+  width: 140px;
+  height: 28px;
+  border-radius: 5px;
+  color: white;
+  margin-right: 10px;
+  transition: all 0.5s;
+  padding: 0 0 0 5px;
+}
+#reset-game:hover {
+  color: rgb(135, 24, 116);
+  background: white;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04aa6d;
+  border-radius: 5px;
+  color: white;
+  width: 140px;
+  height: 28px;
+  padding: 0px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0 0 0px 1px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 140px;
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.speed-control {
+  margin-right: 10px;
+}
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 120px; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #ecf99b;
+  box-shadow: 2px 2px 2px inset; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+  border-radius: 3px;
+}
+.rules-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 300px 0 300px;
+}
