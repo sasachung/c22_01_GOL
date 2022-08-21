@@ -1,6 +1,11 @@
 #canvas {
   margin: 10px;
 }
+.title {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
 body {
   background-color: rgb(115, 157, 181);
 }

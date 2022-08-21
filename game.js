@@ -178,7 +178,9 @@ document.querySelector(".pattern-btn").addEventListener("click", function () {
   const robert = generatePattern(robertStr);
   const snake = generatePattern(snakeStr);
   const spaceship = generatePattern(spaceshipStr);
+
   let patternArray = [robert, snake, spaceship];
+  init();
   drawPattern(patternArray[Math.floor(Math.random() * 3)], 10, 3);
 });
 
